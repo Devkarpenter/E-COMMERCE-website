@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    height: 100px;
 }
 .footer-logo{
     display: flex;
@@ -12,14 +13,14 @@
 }
 .footer-logo p{
     color: #383838;
-    font-size: 46px;
-    font-weight: 700px;
+    font-size: 23px;
+    font-weight: 350px;
 }
 .footer-links{
     display: flex;
     list-style: none ;
-    gap: 50px;
-    font-size: 20px;
+    gap: 35px;
+    font-size: 10px;
     color: #252525;
 }
 .footer-link li{
@@ -27,28 +28,35 @@
 }
 .footer-social-icon{
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 .footer-icon-container{
-    padding: 10px;
-    padding-bottom: 6px;
+    padding: 5px;
+    padding-bottom: 3px;
     background: #fbfbfb;
     border: 1px solid ebebeb;
+    transition: rotate 0.5s ease;
+}
+.footer-social-icon img:hover{
+   rotate: 340deg ;
 }
 .footer-copyright{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #1a1a1a;
     font-size: 20px;
 }
 .footer-copyright hr{
-    width: 80%;
+    width: 60%;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 3px;
     background: #c7c7c7;
+}
+.footer-copyright p{
+    margin-bottom: 20px;
 }
