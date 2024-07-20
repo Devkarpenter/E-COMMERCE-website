@@ -18,7 +18,7 @@
     font-weight: 300;
 }
 .shopcategory-products{
-    margin: 20px 230px;
+    margin: 0px 230px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 80px;
@@ -28,7 +28,7 @@
     cursor: pointer;
     display: grid; /* Changed from flex to grid */
     place-items: center; /* Centers content both horizontally and vertically */
-    margin: 150px auto;
+    margin: 170px auto;
     width: 20%;
     height: 39px;
     border-radius: 75px;

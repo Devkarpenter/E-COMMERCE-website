@@ -1,58 +1,64 @@
-.hero{
+.hero {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(160deg,#ef79f8, #35d06422 90%);
+    background: linear-gradient(160deg, #ef79f8, #35d06422 90%);
     display: flex;
-    background-color: #125e35;
+    background-color: #000603;
 }
-.hero-left{
+
+.hero-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding-left: 180px;
+    padding-left: 10%; /* Adjusted for responsiveness */
     line-height: 1.1;
 }
+
 .hero-left h2 {
     color: #090909;
     font-size: 13px;
     font-weight: 300;
 }
-.hero-left p{
-    color:#171717;
-    font-size: 50px;
+
+.hero-left p {
+    color: #171717;
+    font-size: 4vw; /* Responsive font size */
     font-weight: 350;
 }
-.hero-hand-icon{
+
+.hero-hand-icon {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.hero-hand-icon img{
-    width: 50px;
-    
+
+.hero-hand-icon img {
+    width: 5vw; /* Responsive image size */
 }
-.hero-letest-btn{
+
+.hero-letest-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    height: 25px;
-    width: 200px;
+    height: 35px;
+    width: 40%; /* Adjusted for responsiveness */
+    max-width: 200px; /* Maximum width for larger screens */
     border-radius: 30px;
     margin-top: 15px;
-    padding-left:10px;
+    padding-left: 10px;
     color: white;
     background-color: #ff4141;
-    font-size:11px;
+    font-size: 1vw; /* Responsive font size */
     font-weight: 250;
     transition: 0.5s ease;
 }
 
-.hero-letest-btn:hover{
+.hero-letest-btn:hover {
     transform: scale(1.1);
-    padding-left:30px;
+    padding-left: 30px;
 }
 
 .hero-right {
@@ -61,16 +67,60 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.5s ease, filter 0.5s ease;
-  }
-  
-  .hero-right img {
-    height: 90vh;
-    width: 70vh;
+}
+
+.hero-right img {
+    max-height: 90vh; /* Adjusted for responsiveness */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    width: auto;
+    height: auto;
     transition: filter 0.5s ease;
-  }
-  
-  .hero-right:hover {
+}
+
+.hero-right:hover {
     transform: scale(1.1);
     filter: brightness(80%);
-  }
-  
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-left {
+        padding-left: 5%;
+    }
+    
+    .hero-letest-btn {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-left {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-left p {
+        font-size: 6vw;
+    }
+
+    .hero-letest-btn {
+        width: 60%;
+    }
+    
+    .hero-right img {
+        max-height: 50vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-left p {
+        font-size: 8vw;
+    }
+
+    .hero-letest-btn {
+        width: 80%;
+    }
+}
