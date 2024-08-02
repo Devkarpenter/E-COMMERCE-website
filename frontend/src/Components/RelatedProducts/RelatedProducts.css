@@ -22,3 +22,30 @@
     display: flex;
     gap:45px ;
 }
+
+/* Media query for screens with max-width of 480px */
+@media (max-width: 480px) {
+    .relatedproducts {
+        height: auto; /* Remove fixed height to fit content naturally */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .relatedproducts h1 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+        text-align: center; /* Center align the heading */
+    }
+
+    .relatedproducts hr {
+        width: 60px; /* Reduce width of the line */
+        height: 4px; /* Reduce height of the line */
+        background: #252525; /* Keep background color */
+    }
+
+    .relatedproducts-item {
+        margin: 20px auto; /* Adjust margin for better spacing */
+        width: 100%; /* Make item container full width */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        gap: 20px; /* Reduce gap between items */
+    }
+}

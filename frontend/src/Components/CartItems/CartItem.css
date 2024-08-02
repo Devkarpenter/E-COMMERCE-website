@@ -96,3 +96,76 @@ margin: 100px  170px;
     background: black;
     cursor: pointer;
 }
+
+@media (max-width: 480px) {
+    .cartitems {
+        margin: 20px;
+    }
+
+    .cartitem-format-main {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .cartitem-format {
+        font-size: 14px;
+    }
+
+    .carticon-product-icon {
+        height: 80px;
+        width: 70px;
+    }
+
+    .cartitem-remove-icon {
+        width: 12px;
+        margin: 0px 20px;
+    }
+
+    .cartitem-quantity {
+        width: 30px;
+        height: 20px;
+    }
+
+    .cartitem-down {
+        margin: 50px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartitem-total {
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .cartitem-total button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .cartitem-promocode {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .cartitem-promocode p {
+        margin-top: 30px;
+    }
+
+    .cartitem-promobox {
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 10px;
+        height: 50px;
+    }
+
+    .cartitem-promobox input {
+        width: calc(100% - 90px); /* Adjusting for button width */
+    }
+
+    .cartitem-promobox button {
+        width: 80px;
+        height: 50px;
+        font-size: 14px;
+    }
+}

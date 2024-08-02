@@ -196,3 +196,70 @@
     font-size: 10px;
     font-weight: 500;
 }
+
+@media (max-width: 480px) {
+    .logonsignup {
+        padding: 50px;
+        margin-bottom: 100px;
+    }
+
+    .container {
+        max-width: 80%;
+        left: 5%;
+        padding: 15px 20px;
+        border: 3px solid rgb(255, 255, 255);
+        box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 20px -15px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .form .input {
+        width: 90%;
+    }
+
+    .form .forgot-password {
+        margin-left: 0;
+    }
+
+    .form .login-button {
+        font-size: 18px;
+        padding-block: 12px;
+        box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 8px -12px;
+    }
+
+    .social-account-container .social-accounts .social-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-account-container .social-accounts .social-button:hover {
+        transform: scale(1.1);
+    }
+
+    .social-account-container .social-accounts .social-button:active {
+        transform: scale(0.95);
+    }
+
+    .loginsignup-container h1 {
+        font-size: 18px;
+    }
+
+    .loginsignup-fields input {
+        font-size: 9px;
+        height: 30px;
+    }
+
+    .loginsignup-container button {
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .loginsignup-login {
+        font-size: 9px;
+    }
+}

@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 768px) {
     .hero {
-        flex-direction: column;
+        
     }
 
     .hero-left {
@@ -104,23 +104,36 @@
 
     .hero-left p {
         font-size: 6vw;
+        color:rgb(164, 237, 168)
     }
 
     .hero-letest-btn {
         width: 60%;
     }
+    .hero-letest-btn {
+        font-size:18px;
+        position: relative;
+        left: 30px;
+    }
     
     .hero-right img {
         max-height: 50vh;
+        
     }
 }
 
 @media screen and (max-width: 480px) {
+    .hero{
+        height: 90vh;
+    }
+    
     .hero-left p {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .hero-letest-btn {
-        width: 80%;
+        width: 100%;
+        margin-left: -29px;
+        
     }
 }

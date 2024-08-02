@@ -26,3 +26,28 @@
     padding: 48px;
     padding-bottom: 70px;
 }
+
+/* Media query for screens with max-width of 480px */
+@media (max-width: 480px) {
+    .descriptionbox {
+        margin: 20px 20px ; /* Adjust margins for better spacing on small screens */
+    }
+
+    .descriptionbox-navigator {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px; /* Add spacing between stacked items */
+    }
+
+    .descriptionbox-nav-box {
+        width: 95%; /* Make navigation boxes full width */
+        height: auto; /* Allow height to adjust based on content */
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 10px; /* Add padding for better touch targets */
+    }
+
+    .descriptionbox-description {
+        padding: 20px; /* Reduce padding for better fit on smaller screens */
+        padding-bottom: 40px; /* Adjust bottom padding for spacing */
+        gap: 15px; /* Reduce gap between items */
+    }
+}

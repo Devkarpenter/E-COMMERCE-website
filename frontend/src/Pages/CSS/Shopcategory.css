@@ -18,10 +18,12 @@
     font-weight: 300;
 }
 .shopcategory-products{
-    margin: 0px 230px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
+    margin: 30px auto;
+    width: 82%;
+    margin-top: 25px;
+    gap: 50px;
 }
 
 .shopcategory-loadmore {
@@ -37,3 +39,44 @@
     font-size: 20px; /* Adjusted font size */
     font-weight: 300;
 }
+
+/* Media query for screens with max-width of 480px */
+@media (max-width: 480px) {
+    .shopcategory-banner {
+        width: 95%; /* Increase width to utilize more screen space */
+        margin: 20px auto; /* Adjust margin for better spacing */
+    }
+
+    .shopcategory-indexsort {
+        margin: 0; /* Remove side margins for better fit on small screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items to full width */
+        gap: 10px; /* Add spacing between items */
+    }
+
+    .shopcategroy-sort {
+        width: 80%;
+        margin-left: 30px; /* Make buttons full-width for better usability */
+        text-align: center; /* Center text inside buttons */
+        padding: 12px; /* Adjust padding for better touch targets */
+    }
+
+    .shopcategory-indexsort p span {
+        margin-left: 10px;
+        font-weight: 600; /* Adjust font weight for better readability */
+    }
+
+    .shopcategory-products {
+        grid-template-columns: 1fr 1fr; /* Stacks items vertically on small screens */
+        gap: 20px; /* Reduced gap between items for better fit */
+        width: 80%; /* Use full width of the container */
+    }
+
+    .shopcategory-loadmore {
+        width: 80%; /* Increase button width to fit more content */
+        height: 45px; /* Adjust height for better touch targets */
+        font-size: 18px; /* Reduce font size for better fit */
+        margin: 20px auto; /* Adjust margin for better spacing */
+    }
+}
+

@@ -113,12 +113,12 @@
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
     .Navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .nav-logo {
-        width: 100%;
+        width: 20%;
         justify-content: center;
         gap: 10px;
     }
@@ -139,8 +139,17 @@
 
 @media (max-width: 480px) {
     .Navbar{
+        
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: row;
+    }
+    .nav-logo{
+        height: 10vh;
+        width: 10%;
+    }
+    .nav-logo p{
+        height: 0vh;
+        font-size: 0px;
+        margin-right: -20px;
     }
 }

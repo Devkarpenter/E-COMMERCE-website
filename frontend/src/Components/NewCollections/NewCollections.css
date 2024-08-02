@@ -1,4 +1,4 @@
-/* Default styles */
+/* Default styles for larger screens */
 .new-collections {
     display: flex;
     flex-direction: column;
@@ -29,25 +29,19 @@
     gap: 50px;
 }
 
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    .collections {
-        grid-template-columns: 1fr 1fr 1fr;
+/* Styles for screens 480px and below */
+@media (max-width: 480px) {
+    .new-collections h1 {
+        font-size: 20px; /* Adjusted font size for smaller screens */
     }
-}
 
-@media (max-width: 900px) {
-    .collections {
-        grid-template-columns: 1fr 1fr;
+    .new-collections hr {
+        width: 70px; /* Adjusted width for smaller screens */
     }
-}
 
-@media (max-width: 600px) {
     .collections {
-        grid-template-columns: fr;
-    }
-    
-    .new-collections {
-        width: 90%;
+        grid-template-columns: 1fr 1fr; /* Reduced number of columns for smaller screens */
+        gap: 20px; /* Reduced gap between items */
+        width: 95%; /* Increased width to use more screen space */
     }
 }

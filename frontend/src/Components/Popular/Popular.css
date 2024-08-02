@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .popular {
     display: flex;
     flex-direction: column;
@@ -23,56 +24,35 @@
 }
 
 .popular-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 30px auto;
     width: 82%;
-    display: flex;
-    gap: 45px;
+    margin-top: 25px;
+    gap: 50px;
 }
 
-@media screen and (max-width: 1024px) {
-    .popular h1 {
-        font-size: 20px;
-    }
-    
-    .popular hr {
-        width: 150px;
-    }
-    
-    .popular-item {
-        width: 90%;
-    }
-}
+/* Styles for screens 480px and below */
+@media (max-width: 480px) {
+    .popular {
 
-@media screen and (max-width: 768px) {
+         height: 900px;
+        padding: 10px; /* Add padding to prevent content from touching edges */
+    }
+
     .popular h1 {
-        font-size: 18px;
-        margin-top: 70px;
+        margin-top: 10px; /* Reduced margin-top for smaller screens */
+        font-size: 20px; /* Adjusted font size for better readability */
     }
-    
+
     .popular hr {
-        width: 120px;
+        width: 70px; /* Adjusted width to fit better on smaller screens */
     }
-    
+
     .popular-item {
-        width: 40%;
         
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .popular h1 {
-        font-size: 16px;
-    }
-    
-    .popular hr {
-        width: 100px;
-    }
-    
-    .popular-item {
-        width: 100%;
-        gap: 15px;
+        grid-template-columns: 1fr 1fr; /* Stacks items vertically on small screens */
+        gap: 20px; /* Reduced gap between items for better fit */
+        width: 80%; /* Use full width of the container */
     }
 }

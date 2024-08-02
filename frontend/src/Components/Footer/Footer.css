@@ -60,3 +60,55 @@
 .footer-copyright p{
     margin-bottom: 20px;
 }
+
+
+/* Media query for screens with max-width of 480px */
+@media (max-width: 480px) {
+    .footer {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add padding to prevent content from touching edges */
+    }
+
+    .footer-logo {
+        flex-direction: column; /* Stack logo and text vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-logo p {
+        font-size: 18px; /* Adjust font size for better readability */
+        font-weight: normal; /* Reset font weight */
+    }
+
+    .footer-links {
+        
+        font-size: 12px; /* Increase font size for better readability */
+        gap: 15px; /* Reduce gap between links */
+    }
+
+    .footer-social-icon {
+        gap: 20px; /* Reduce gap between icons */
+    }
+
+    .footer-icon-container {
+        padding: 5px;
+        background: #fbfbfb;
+        border: 1px solid #ebebeb; /* Correct the hex color */
+        transition: transform 0.5s ease; /* Use transform for rotation */
+    }
+
+    .footer-social-icon img:hover {
+        transform: rotate(340deg); /* Apply rotation with transform */
+    }
+
+    .footer-copyright {
+        font-size: 16px; /* Adjust font size for better readability on small screens */
+    }
+
+    .footer-copyright hr {
+        width: 80%; /* Make the line slightly wider on small screens */
+    }
+
+    .footer-copyright p {
+        margin-bottom: 10px; /* Adjust margin for better spacing */
+    }
+}
